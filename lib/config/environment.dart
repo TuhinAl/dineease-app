@@ -22,11 +22,19 @@ class ApiEndpoints {
   static const String phoneVerification =
       '${Environment.contextPath}/member/secure/phone-verify';
   static const String otpVerification =
-      '${Environment.contextPath}/member/secure/otp-verify';
+      '${Environment.contextPath}/member/phone/number/verify-otp';
+  static const String resendOtp =
+      '${Environment.contextPath}/member/phone/number/re-send-otp-code';
+  static const String checkPhoneRegistered =
+      '${Environment.contextPath}/member/phone/number/already-registered-phone';
+  static const String sendOtp =
+      '${Environment.contextPath}/member/phone/number/send-otp-code';
   static const String forgotPassword =
       '${Environment.contextPath}/member/secure/forgot-password';
   static const String resetPassword =
       '${Environment.contextPath}/member/secure/reset-password';
+  static const String updatePassword =
+      '${Environment.contextPath}/member/phone/number/update-password';
 
   // Other Endpoints
   static const String currentMonthOverview =

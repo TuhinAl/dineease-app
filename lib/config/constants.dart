@@ -7,6 +7,8 @@ class StorageKeys {
   static const String userId = 'id';
   static const String dineId = 'dineId';
   static const String themeMode = 'theme_mode';
+  static const String otpExpiryTimestamp = 'otp_expiry_timestamp';
+  static const String otpPhoneNumber = 'otp_phone_number';
 }
 
 class ErrorMessages {

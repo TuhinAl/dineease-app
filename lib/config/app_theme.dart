@@ -53,6 +53,20 @@ class AppTheme {
     colors: [Color(0xFF1E1E1E), Color(0xFF2A2A2A)],
   );
 
+  // Password Reset Gradient (Purple gradient as per Angular requirements)
+  static const LinearGradient passwordResetGradient = LinearGradient(
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    colors: [Color(0xFF667eea), Color(0xFF764ba2)],
+  );
+
+  // Password Reset Button Gradient
+  static const LinearGradient passwordResetButtonGradient = LinearGradient(
+    begin: Alignment.centerLeft,
+    end: Alignment.centerRight,
+    colors: [Color(0xFF667eea), Color(0xFF764ba2)],
+  );
+
   // Meal Colors
   static const Color breakfastColor = Color(0xFFFFA726);
   static const Color lunchColor = Color(0xFF66BB6A);

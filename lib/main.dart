@@ -6,6 +6,7 @@ import 'screens/auth/login_screen.dart';
 import 'screens/auth/phone_registration_screen.dart';
 import 'screens/auth/otp_verification_screen.dart';
 import 'screens/auth/member_registration_screen.dart';
+import 'screens/auth/password_reset_screen.dart';
 import 'screens/main_screen.dart';
 import 'services/storage_service.dart';
 
@@ -47,6 +48,14 @@ class DineEaseApp extends StatelessWidget {
             return MaterialPageRoute(
               builder: (_) =>
                   MemberRegistrationScreen(phoneNumber: phoneNumber),
+            );
+          case AppRoutes.passwordReset:
+            final args = settings.arguments as Map<String, String>;
+            return MaterialPageRoute(
+              builder: (_) => PasswordResetScreen(
+                phoneNumber: args['phoneNumber']!,
+                name: args['name'],
+              ),
             );
           case AppRoutes.home:
             return MaterialPageRoute(builder: (_) => const MainScreen());
